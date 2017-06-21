@@ -1,6 +1,6 @@
 # Clinic Listing Page
 
-Cerrita has a growing list of clinics on the website. See Bangkok clinics  link  as an example. Currently, there is no option for the user to sort it in other ways like on other websites. The clinic sorting order (which clinic shows first, second, etc.) are manually arranged by a person. 
+Cerrita has a growing list of clinics on the website. See Bangkok clinics  link (https://www.cerrita.com/search-form.php?l=Bangkok&t=&ct=Dental&search=advanced)  as an example. Currently, there is no option for the user to sort it in other ways like on other websites. The clinic sorting order (which clinic shows first, second, etc.) are manually arranged by a person. 
 
 There are better ways to sort clinics to benefit the user and our business. Hence, we want you to:
 1. Identify at least 4 methods that the clinic list can be sorted
