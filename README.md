@@ -10,3 +10,21 @@ There are better ways to sort clinics to benefit the user and our business. Henc
 Please use the data and content made available to you from the link above and rearrange the clinics according to your recommended sorting.
 
 Submission guidelines : Answers and explanations to questions 1-3 are to be answered in written form. The sorting method algorithm should be coded with data inputs and desired output. The solution should be submitted with all source code, optional build scripts, and a README.txt file with instructions on how to run the application (including any required dependencies).
+
+## Hi 
+
+### Sort list methods
+1. recommended
+2. price low / hight
+3. rating
+4. promotion / discount
+
+### Suggestion method default
+It is not easy to decide which method to use. Should be test each experiment. my suggestion first is 
+
+top 1-2 display recommended
+    3-4 display rating / promotion
+    5.. display created at order by desc
+
+### How to measure
+Tracking with behavior when customers selection menu sort list 
