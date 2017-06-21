@@ -22,9 +22,11 @@ Submission guidelines : Answers and explanations to questions 1-3 are to be answ
 ### Suggestion method default
 It is not easy to decide which method to use. Should be test each experiment. my suggestion first is 
 
+```
 top 1-2 display recommended
     3-4 display rating / promotion
     5.. display created at order by desc
+```
 
 ### How to measure
 Tracking with behavior when customers selection menu sort list 
