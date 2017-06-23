@@ -47,3 +47,5 @@ ga('send', 'event', 'Search display', 'select', 'price');
 ref: https://developers.google.com/analytics/devguides/collection/analyticsjs/events
 
 Also sholde be tracking after selection for more effective 
+
+demo here: https://clinic-listing-page.herokuapp.com/
