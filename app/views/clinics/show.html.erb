@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @clinic.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @clinic.location %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @clinic.rating %>
+</p>
+
+<p>
+  <strong>Verify:</strong>
+  <%= @clinic.verify %>
+</p>
+
+<p>
+  <strong>Flag:</strong>
+  <%= @clinic.flag %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @clinic.image %>
+</p>
+
+<%= link_to 'Edit', edit_clinic_path(@clinic) %> |
+<%= link_to 'Back', clinics_path %>
