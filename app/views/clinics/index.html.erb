@@ -5,12 +5,12 @@
 <table>
   <thead>
     <tr>
+      <th>Image</th>
       <th>Name</th>
       <th>Location</th>
       <th>Rating</th>
       <th>Verify</th>
       <th>Flag</th>
-      <th>Image</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,12 +18,12 @@
   <tbody>
     <% @clinics.each do |clinic| %>
       <tr>
+        <td><%= image_tag clinic.image, width: 200, height: 150 %></td>
         <td><%= clinic.name %></td>
         <td><%= clinic.location %></td>
         <td><%= clinic.rating %></td>
         <td><%= clinic.verify %></td>
         <td><%= clinic.flag %></td>
-        <td><%= clinic.image %></td>
         <td><%= link_to 'Show', clinic %></td>
         <td><%= link_to 'Edit', edit_clinic_path(clinic) %></td>
         <td><%= link_to 'Destroy', clinic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
