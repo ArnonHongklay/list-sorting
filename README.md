@@ -32,6 +32,39 @@ Above I split for 3 groups for
 - second group offer experience of customers review
 - third group to be fair of new client
 
+#### Explain for sample code 
+I just add clinic model schema attrbutes as: 
+
+```
+    string "name"
+    string "location"
+    integer "rating"
+    boolean "verify"
+    datetime "created_at", null: false
+    datetime "updated_at", null: false
+    string "flag"
+    string "image"
+```
+
+for first algorithm 
+
+```
+  # feature is finding flag 'recommended' and 'promotion' first 2 sequences 
+  scope :feature, -> { where(flag: ['recommended', 'promotion']).limit(2) }
+  
+  # most_rating is finding rating first 3 sequences and exclude feature
+  scope :most_rating, -> { where.not(id: feature.select(:id)).order(rating: :desc).limit(3) }
+
+  # not_combined is inverse combined between feature and most_rating order by desc
+  scope :not_combined, -> { where.not(id: feature + most_rating).order(created_at: :desc) }
+    
+  # combined is feature + most_rating + not_combined to display result
+  scope :combined, -> { feature + most_rating + not_combined }
+```
+
+- Reason way to develop is We throw all the load on to database for ready to return with controller and display
+
+
 ### How to measure
 Tracking with behavior when customers selection menu sort list 
 
